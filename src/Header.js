@@ -1,14 +1,10 @@
 import React from "react";
 import NavBar from "./NavBar";
+import './assets/styles/Header.css';
 
 function Header(){
-  var HeaderStyles = {
-    display: "flex",
-    justifyContent: "center",
-    width: "100%",
-  };
   return (
-    <div style={HeaderStyles}>
+    <div className="HeaderStyles">
       <NavBar/>
     </div>
   );

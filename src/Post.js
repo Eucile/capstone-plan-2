@@ -26,11 +26,10 @@ function Post(props) {
         }
       `}</style>
       <div>
-          <h1 style={titleStyles}><a href="">{props.title}</a></h1>
-          <h2 style={quoteStyles}>“{props.quote}”</h2>
-          <p style={authorStyles}>{props.author} - posted on {props.created_on}</p>
+          <h1 className="titleStyles"><a href="">{props.title}</a></h1>
+          <h2 className="quoteStyles">“{props.quote}”</h2>
+          <p className="authorStyles">{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
-          //    LINK TO EDIT COMPONENT 
       </div>
     </div>
   );

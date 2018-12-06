@@ -1,0 +1,32 @@
+input, textarea {
+  height: auto;
+  border: 1px solid #8c8c8c;
+  padding: 10px 0px 7px 10px;
+  margin: 1em;
+  color: #262626;
+  font-size: .75em;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+button {
+  margin-top: 2em;
+  color: rgb(38, 38, 38);
+  text-decoration: none;
+  border: none;
+  display: block;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+.form-box {
+  background: rgba(0, 0, 0, .7);
+  padding: 1.25em 5.882352941176% 20px;
+  margin: 0 auto;
+}
+.content-box {
+  width: 87%;
+  height: 300px;
+}

@@ -1,29 +1,19 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './NavBar.css';
+import './glitch.css';
+import './assets/styles/NavBar.css';
 
 function NavBar(){
-  var navBox = {
-    display: "flex",
-    marginLeft: "auto",
-    marginRight: "auto",
-    justifyContent: "space-around",
-    width: "100%",
-  };
-
-  var navStyles = {
-    paddingRight: '8em',
-  };
 
   return (
     <div>
-      <ul style={navBox}>
-        <li className="glitchy" style={navStyles}><Link to="/">home</Link></li>
-        <li style={navStyles}>about</li>
-        <li style={navStyles}>contact</li>
-        <li style={navStyles}>archive</li>
-        <li style={navStyles}>art</li>
-        <li style={navStyles}><Link to="/LogInForm">log in</Link></li>
+      <ul className="navBox">
+        <li className="navStyles"><Link to="/">home</Link></li>
+        <li className="navStyles">about</li>
+        <li className="navStyles">contact</li>
+        <li className="navStyles">archive</li>
+        <li className="navStyles">art</li>
+        <li className="navStyles"><Link to="/LogInForm">log in</Link></li>
       </ul>
     </div>
   );

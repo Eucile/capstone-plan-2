@@ -2,6 +2,7 @@ import React from "react";
 import MainContent from "./MainContent";
 import PostList from './PostList';
 import { Link } from 'react-router-dom';
+import './assets/styles/MainBlog.css';
 
 class MainBlog extends React.Component{
 
@@ -14,17 +15,9 @@ class MainBlog extends React.Component{
   }
 
   render(){
-    var MainBlogStyle = {
-      display: "flex",
-      flexDirection: "row",
-      justifyContent: "center",
-      width: "100%",
-      marginBottom: '4em',
-      marginTop: '2em',
-    };
     return (
       <div>
-        <div style={MainBlogStyle}>
+        <div className="MainBlogStyle">
           <div>
           <MainContent/>
           <Link to="/NewPostControl">new post</Link>

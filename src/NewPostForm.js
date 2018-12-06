@@ -1,7 +1,8 @@
 import React from 'react';
 import { v4 } from 'uuid';
 import moment from 'moment';
-import { Redirect } from 'react-router'
+import { Redirect } from 'react-router';
+import './assets/styles/NewPostForm.css';
 
 class NewPostForm extends React.Component{
   constructor() {
@@ -36,38 +37,6 @@ class NewPostForm extends React.Component{
     }
     return (
       <div>
-        <style jsx>{`
-          input, textarea {
-            height: auto;
-            border: 1px solid #8c8c8c;
-            padding: 10px 0px 7px 10px;
-            margin: 1em;
-            color: #262626;
-            font-size: .75em;
-            line-height: 1;
-            font-weight: 700;
-            letter-spacing: .1em;
-            text-transform: uppercase;
-          }
-          button {
-            color: rgb(38, 38, 38);
-            border-radius: 25px;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            border: none;
-            font-weight: bold;
-          }
-          .form-box {
-            background: rgba(0, 0, 0, .7);
-            padding: 1.25em 5.882352941176% 20px;
-            margin: 0 auto;
-          }
-          .content-box {
-            width: 87%;
-            height: 300px;
-          }
-        `}</style>
         <form className="form-box" onSubmit={this.handleNewPostFormSubmission}>
           <div>
             <input
