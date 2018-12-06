@@ -56,6 +56,8 @@ function App(){
         <Route exact path='/' component={() => <MainBlog posts={posts} />} />
         <Route path='/NewPostControl' component={() => <NewPostControl posts={posts} />}/>
         <Route path='/LogInForm' component={() => <LogInForm users={users}/>} />
+        //   ADD EDIT ROUTING 
+        // ADD POST DISPLAY PAGE ROUTING
       </Switch>
       <Footer/>
     </div>

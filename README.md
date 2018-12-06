@@ -31,6 +31,7 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 
 * Admin component with the ability to monitor and edit all community posts
+* commenting section for each post
 * Search component
 * multi-page routing after every 10 posts and better site organization
 * Blog calendar and archive component  

@@ -30,6 +30,7 @@ function Post(props) {
           <h2 style={quoteStyles}>“{props.quote}”</h2>
           <p style={authorStyles}>{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
+          //    LINK TO EDIT COMPONENT 
       </div>
     </div>
   );
