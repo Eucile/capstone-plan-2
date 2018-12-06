@@ -1,0 +1,406 @@
+@-webkit-keyframes glitch {
+  0% {
+    text-shadow: 12px 0px 0px #00aaff;
+    left: 2px;
+  }
+  1% {
+    text-shadow: -2px 0px 0px #f808c6;
+    left: -4px;
+  }
+  2% {
+    text-shadow: 16px 0px 0px #c0147c;
+    left: -2px;
+  }
+  3% {
+    text-shadow: 15px 0px 0px #00aaff;
+    left: 3px;
+  }
+  4% {
+    text-shadow: 6px 0px 0px #c20ed5;
+    left: 4px;
+  }
+  5% {
+    text-shadow: 2px 0px 0px #c20ed5;
+    left: 6px;
+  }
+  6% {
+    text-shadow: 0px 0px 0px #f808c6;
+    left: 0px;
+  }
+  7% {
+    text-shadow: 16px 0px 0px #c0147c;
+    left: 0px;
+  }
+  8% {
+    text-shadow: -6px 0px 0px #00ff80;
+    left: 0px;
+  }
+  9% {
+    text-shadow: 14px 0px 0px #f808c6;
+    left: 4px;
+  }
+  10% {
+    text-shadow: 16px 0px 0px #f808c6;
+    left: 0px;
+  }
+  11% {
+    text-shadow: 17px 0px 0px #00aaff;
+    left: -2px;
+  }
+  12% {
+    text-shadow: 13px 0px 0px #c20ed5;
+    left: 1px;
+  }
+  13% {
+    text-shadow: 1px 0px 0px #f808c6;
+    left: -3px;
+  }
+  14% {
+    text-shadow: 11px 0px 0px #00aaff;
+    left: -1px;
+  }
+  15% {
+    text-shadow: 5px 0px 0px #c0147c;
+    left: 6px;
+  }
+  16% {
+    text-shadow: -9px 0px 0px #f808c6;
+    left: 1px;
+  }
+  17% {
+    text-shadow: -6px 0px 0px #00ff80;
+    left: -5px;
+  }
+  18% {
+    text-shadow: 5px 0px 0px #c0147c;
+    left: -5px;
+  }
+  19% {
+    text-shadow: 8px 0px 0px #c0147c;
+    left: 5px;
+  }
+  20% {
+    text-shadow: 16px 0px 0px #c0147c;
+    left: 3px;
+  }
+  21% {
+    text-shadow: 10px 0px 0px #00ff80;
+    left: 1px;
+  }
+  22% {
+    text-shadow: -10px 0px 0px #00ff80;
+    left: 4px;
+  }
+  23% {
+    text-shadow: 8px 0px 0px #f808c6;
+    left: -3px;
+  }
+  24% {
+    text-shadow: -7px 0px 0px #00aaff;
+    left: 0px;
+  }
+  25% {
+    text-shadow: -1px 0px 0px #c0147c;
+    left: 1px;
+  }
+  26% {
+    text-shadow: 8px 0px 0px #f808c6;
+    left: 3px;
+  }
+  27% {
+    text-shadow: -4px 0px 0px #f808c6;
+    left: 3px;
+  }
+  28% {
+    text-shadow: 3px 0px 0px #f808c6;
+    left: 6px;
+  }
+  29% {
+    text-shadow: 14px 0px 0px #c20ed5;
+    left: -4px;
+  }
+  30% {
+    text-shadow: 12px 0px 0px #c20ed5;
+    left: -2px;
+  }
+  31% {
+    text-shadow: -9px 0px 0px #00ff80;
+    left: 2px;
+  }
+  32% {
+    text-shadow: 3px 0px 0px #f808c6;
+    left: 6px;
+  }
+  33% {
+    text-shadow: -2px 0px 0px #00aaff;
+    left: -3px;
+  }
+  34% {
+    text-shadow: 7px 0px 0px #c0147c;
+    left: -2px;
+  }
+  35% {
+    text-shadow: -8px 0px 0px #f808c6;
+    left: -3px;
+  }
+  36% {
+    text-shadow: -8px 0px 0px #c0147c;
+    left: -5px;
+  }
+  37% {
+    text-shadow: 8px 0px 0px #c20ed5;
+    left: 4px;
+  }
+  38% {
+    text-shadow: 7px 0px 0px #c20ed5;
+    left: -4px;
+  }
+  39% {
+    text-shadow: 12px 0px 0px #00aaff;
+    left: -1px;
+  }
+  40% {
+    text-shadow: 17px 0px 0px #c0147c;
+    left: -1px;
+  }
+  41% {
+    text-shadow: -3px 0px 0px #00aaff;
+    left: -4px;
+  }
+  42% {
+    text-shadow: 5px 0px 0px #c0147c;
+    left: 4px;
+  }
+  43% {
+    text-shadow: 16px 0px 0px #00ff80;
+    left: 0px;
+  }
+  44% {
+    text-shadow: 16px 0px 0px #c20ed5;
+    left: -3px;
+  }
+  45% {
+    text-shadow: -9px 0px 0px #c0147c;
+    left: 3px;
+  }
+  46% {
+    text-shadow: 0px 0px 0px #f808c6;
+    left: -4px;
+  }
+  47% {
+    text-shadow: 13px 0px 0px #c0147c;
+    left: 1px;
+  }
+  48% {
+    text-shadow: 4px 0px 0px #c20ed5;
+    left: 0px;
+  }
+  49% {
+    text-shadow: 16px 0px 0px #f808c6;
+    left: -4px;
+  }
+  50% {
+    text-shadow: 17px 0px 0px #c0147c;
+    left: 0px;
+  }
+  51% {
+    text-shadow: -8px 0px 0px #f808c6;
+    left: -4px;
+  }
+  52% {
+    text-shadow: 15px 0px 0px #f808c6;
+    left: 4px;
+  }
+  53% {
+    text-shadow: 10px 0px 0px #00ff80;
+    left: 6px;
+  }
+  54% {
+    text-shadow: -4px 0px 0px #c20ed5;
+    left: 2px;
+  }
+  55% {
+    text-shadow: -6px 0px 0px #c0147c;
+    left: 3px;
+  }
+  56% {
+    text-shadow: -10px 0px 0px #c20ed5;
+    left: 1px;
+  }
+  57% {
+    text-shadow: 4px 0px 0px #c20ed5;
+    left: -3px;
+  }
+  58% {
+    text-shadow: 17px 0px 0px #00aaff;
+    left: 0px;
+  }
+  59% {
+    text-shadow: -10px 0px 0px #c20ed5;
+    left: 5px;
+  }
+  60% {
+    text-shadow: -3px 0px 0px #f808c6;
+    left: 2px;
+  }
+  61% {
+    text-shadow: 5px 0px 0px #00ff80;
+    left: 2px;
+  }
+  62% {
+    text-shadow: 16px 0px 0px #00ff80;
+    left: 4px;
+  }
+  63% {
+    text-shadow: -5px 0px 0px #c0147c;
+    left: -2px;
+  }
+  64% {
+    text-shadow: 17px 0px 0px #c0147c;
+    left: -5px;
+  }
+  65% {
+    text-shadow: 10px 0px 0px #f808c6;
+    left: -5px;
+  }
+  66% {
+    text-shadow: 13px 0px 0px #00aaff;
+    left: 0px;
+  }
+  67% {
+    text-shadow: 10px 0px 0px #00ff80;
+    left: 5px;
+  }
+  68% {
+    text-shadow: -8px 0px 0px #c20ed5;
+    left: 2px;
+  }
+  69% {
+    text-shadow: -1px 0px 0px #00aaff;
+    left: 0px;
+  }
+  70% {
+    text-shadow: 17px 0px 0px #c20ed5;
+    left: 0px;
+  }
+  71% {
+    text-shadow: 2px 0px 0px #00aaff;
+    left: 5px;
+  }
+  72% {
+    text-shadow: -10px 0px 0px #00ff80;
+    left: -4px;
+  }
+  73% {
+    text-shadow: 4px 0px 0px #c20ed5;
+    left: 5px;
+  }
+  74% {
+    text-shadow: -5px 0px 0px #c0147c;
+    left: 5px;
+  }
+  75% {
+    text-shadow: 4px 0px 0px #f808c6;
+    left: 4px;
+  }
+  76% {
+    text-shadow: -4px 0px 0px #f808c6;
+    left: -3px;
+  }
+  77% {
+    text-shadow: -7px 0px 0px #00aaff;
+    left: -5px;
+  }
+  78% {
+    text-shadow: 17px 0px 0px #c0147c;
+    left: -3px;
+  }
+  79% {
+    text-shadow: 14px 0px 0px #00ff80;
+    left: 0px;
+  }
+  80% {
+    text-shadow: 0px 0px 0px #00ff80;
+    left: 6px;
+  }
+  81% {
+    text-shadow: -7px 0px 0px #00ff80;
+    left: -4px;
+  }
+  82% {
+    text-shadow: 14px 0px 0px #c0147c;
+    left: -3px;
+  }
+  83% {
+    text-shadow: 9px 0px 0px #c20ed5;
+    left: 4px;
+  }
+  84% {
+    text-shadow: -2px 0px 0px #c0147c;
+    left: 4px;
+  }
+  85% {
+    text-shadow: 13px 0px 0px #f808c6;
+    left: -5px;
+  }
+  86% {
+    text-shadow: 2px 0px 0px #f808c6;
+    left: -2px;
+  }
+  87% {
+    text-shadow: 7px 0px 0px #00ff80;
+    left: 0px;
+  }
+  88% {
+    text-shadow: -2px 0px 0px #00ff80;
+    left: 2px;
+  }
+  89% {
+    text-shadow: 8px 0px 0px #00aaff;
+    left: 6px;
+  }
+  90% {
+    text-shadow: 2px 0px 0px #00aaff;
+    left: 0px;
+  }
+  91% {
+    text-shadow: 15px 0px 0px #f808c6;
+    left: -2px;
+  }
+  92% {
+    text-shadow: 5px 0px 0px #f808c6;
+    left: 6px;
+  }
+  93% {
+    text-shadow: -9px 0px 0px #f808c6;
+    left: 2px;
+  }
+  94% {
+    text-shadow: -9px 0px 0px #f808c6;
+    left: 5px;
+  }
+  95% {
+    text-shadow: 6px 0px 0px #c0147c;
+    left: -5px;
+  }
+  96% {
+    text-shadow: 5px 0px 0px #c20ed5;
+    left: -4px;
+  }
+  97% {
+    text-shadow: 14px 0px 0px #f808c6;
+    left: -5px;
+  }
+  98% {
+    text-shadow: 0px 0px 0px #00aaff;
+    left: 4px;
+  }
+  99% {
+    text-shadow: -5px 0px 0px #f808c6;
+    left: 2px;
+  }
+  100% {
+    text-shadow: 12px 0px 0px #c20ed5;
+    left: -3px;
+  }
+}

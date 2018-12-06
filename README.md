@@ -1,44 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Capstone Planning
 
-## Available Scripts
+#### by Krystal Foster
+#### Nov. 30, 2018
 
-In the project directory, you can run:
+## Name of Project: Blog Engine
 
-### `npm start`
+### Project’s Purpose or Goal:
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A React CRUD app that allows a selection of authenticated users to update and curate community blog posts. May evolve into a musical or creative-leaning forum after MVP is hit but I am focused on making a functioning blog for now that I can specialize in the coming weeks. I plan to incorporate both firebase and redux, user authentication, rich text editing tools, site routing, the ability for users to edit/delete/upload their own posts, and comment on others. My end goal is to open a space that facilitates interaction between like-minded users.    
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### List the absolute minimum features the project requires to meet this purpose or goal:
 
-### `npm test`
+* Working firebase database that stores and pushes blog entries to DOM
+* the ability for authorized users to add, edit and delete blog entries.
+* User authentication with the correct authorized views and control over their own posts.
+* routing throughout, including log in page, blog entry form, about page, home, etc.
+* user dashboard with convenient links to their past posts for review and editing purposes.
+* Master blog list limited to so many characters, with the full post visible on click.
+* Rich text editor feature that preserves whitespace and text formatting for bloggers.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## NOTE: Clicking the "home" link routes you to the "postlist" portion of this project which works and is currently informed by a firebase database, but the api key is needed to run it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own.
 
-### `npm run build`
+### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* React/jsx
+* JavaScript
+* Firebase data and auth
+* possibly draft.js or another framework to allow rich text editing
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Admin component with the ability to monitor and edit all community posts
+* Search component
+* multi-page routing after every 10 posts and better site organization
+* Blog calendar and archive component  
+* subtle animations, styles, extra stuff to make the site more immersive.
+* further down the road I would like to teach myself socketing or how to incorporate chat rooms. This project is basically my first step into building a social site.
 
-### `npm run eject`
+## Current Component Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Technologies and Resources
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Setup Instructions
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+First, make sure you have node package manager installed globally. Check out https://www.npmjs.com/get-npm for information on that.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+#### Then:
 
-## Learn More
+`$ git clone https://github.com/Eucile/capstone-draft`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`$ cd capstone-draft`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+`$ npm install`
+
+`$ npm run start`
+
+
+### License
+
+Copyright (c) 2018 **_{ Krystal Foster}_**
