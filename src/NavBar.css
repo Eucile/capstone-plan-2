@@ -1,4 +1,4 @@
-@-webkit-keyframes glitch {
+@keyframes glitch {
   0% {
     text-shadow: 12px 0px 0px #00aaff;
     left: 2px;
@@ -403,4 +403,8 @@
     text-shadow: 12px 0px 0px #c20ed5;
     left: -3px;
   }
+}
+
+li:hover {
+animation: glitch 0.2s infinite;
 }
