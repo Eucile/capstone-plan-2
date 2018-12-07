@@ -19,7 +19,7 @@ class NewPostForm extends React.Component{
     let timeStamp = moment().format('MM-DD-YYYY');
     let post = {
       title: this._title.value,
-      quote: this._quote.value,
+      tagline: this._tagline.value,
       author: this._author.value,
       content: this._content.value,
       id: v4(),
@@ -46,9 +46,9 @@ class NewPostForm extends React.Component{
               ref={(input) => {this._title = input;}}/>
             <input
               type='text'
-              id='quote'
-              placeholder='Quote:'
-              ref={(input) => {this._quote = input;}}/>
+              id='tagline'
+              placeholder='tagline:'
+              ref={(input) => {this._tagline = input;}}/>
             <input
               type='text'
               id='author'

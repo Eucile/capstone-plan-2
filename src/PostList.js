@@ -9,7 +9,7 @@ function PostList(props) {
         <Post
           title={post.title}
           author={post.author}
-          quote={post.quote}
+          tagline={post.tagline}
           content={post.content}
           created_on={post.created_on}
           key={post.id}
