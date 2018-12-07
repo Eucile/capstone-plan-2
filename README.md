@@ -1,7 +1,7 @@
 # Capstone Planning
 
 #### by Krystal Foster
-#### Nov. 30, 2018
+#### Dec 7, 2018
 
 ## Name of Project: Blog Engine
 
