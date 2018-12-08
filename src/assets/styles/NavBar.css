@@ -3,15 +3,11 @@
   justify-content: space-around;
   margin: 0 auto;
   width: 100%;
-}
-.navStyles {
-  padding-right: 7em;
-}
-a {
   text-decoration: none;
   color: white;
 }
-a:hover {
-  opacity: 0.9;
-  transition: 0.7s;
+.navStyles {
+  padding-right: 7em;
+  text-decoration: none;
+  color: white;
 }

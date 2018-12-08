@@ -7,11 +7,11 @@ import './assets/styles/UserDashboard.css';
 class MainBlog extends React.Component{
 
   getPosts () {
-  let posts = [];
-  this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
-  posts.push(snapshot.val());
-  });
-  return posts.reverse();
+    let posts = [];
+    this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
+      posts.push(snapshot.val());
+    });
+    return posts.reverse();
   }
 
   render(){
@@ -20,8 +20,7 @@ class MainBlog extends React.Component{
         <div className="MainBlogStyle">
           <div>
             <div className="dash">
-              <button id="dash-button" type="submit"><Link to="/NewPostForm"><p>new post</p></Link></button>
-              <button id="dash-button" type="submit"><Link to="/LogInForm"><p>log out</p></Link></button>
+              <button><Link to="/new"><span className="dash-button">new post</span></Link></button>
             </div>
             <PostList postList={this.getPosts()}/>
           </div>

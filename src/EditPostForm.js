@@ -40,7 +40,7 @@ class EditPostForm extends React.Component{
             id='content'
             placeholder='Content:'
             ref={(textarea) => {this._content = textarea;}}/>
-          <button type='submit'>Submit</button>
+          <button type='submit'>Save</button>
         </form>
       </div>
     )
