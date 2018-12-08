@@ -1,7 +1,12 @@
-
+.dash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
 .dash-button {
   color: black;
-  margin: 3em;
+  margin: 5em;
 }
 .dash-button:hover {
   color: white;

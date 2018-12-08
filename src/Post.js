@@ -14,14 +14,15 @@ function Post(props) {
           font-weight: 300;
         }
         .blurb-box {
-          width: 400px;
-          height: 330px;
-          border: gray solid 1px;
+          width: 360px;
+          height: 300px;
+          border-bottom: 1px solid #d9d9d9;
           background: white;
           color: black;
           padding: 1em;
           margin: 1em;
           overflow: hidden;
+          box-shadow: 0px 10px 30px rgba(0,0,0, 1.3);
         }
       `}</style>
       <div className="blurb-box">

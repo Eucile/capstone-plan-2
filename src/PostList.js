@@ -8,13 +8,14 @@ function PostList(props) {
     <style jsx>{`
       .black-box {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         flex-flow: row wrap;
-        background: white;
+        background: rgb(167,167,167, 0.3);
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
-        padding: 3em;
-        width: 95%;
+        padding: 2em;
+        width: 90%;
+        margin: 0 auto;
       }
     `}</style>
       {props.postList.map((post, index) =>
