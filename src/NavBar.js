@@ -14,6 +14,7 @@ function NavBar(){
         <li className="navStyles">archive</li>
         <li className="navStyles">art</li>
         <li><Link to="/login"><span className="navStyles">log in</span></Link></li>
+        <li><Link to="user"><img className="user-icon" src="https://cdn3.iconfinder.com/data/icons/trico-circles-solid/24/Circle-Solid-Profile-512.png"/></Link></li>
       </ul>
     </div>
   );
