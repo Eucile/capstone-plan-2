@@ -40,7 +40,7 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 
 ## Current Component Structure
 
-![Screenshot](component-tree.png)
+![Screenshot](component-hierarchy.png)
 
 ### Technologies and Resources
 
