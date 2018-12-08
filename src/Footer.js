@@ -5,7 +5,7 @@ function Footer(){
 
   return (
     <div className="FooterStyles">
-      <p>::..::</p>
+      <p className="FooterDots">::..::</p>
     </div>
   );
 }

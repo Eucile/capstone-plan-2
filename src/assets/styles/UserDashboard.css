@@ -1,0 +1,23 @@
+.dash {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+#dash-button {
+  padding: 5px;
+}
+p {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.9;
+  transition: 0.7s;
+}
+button {
+  margin-right: 7em;
+  padding: 0;
+}

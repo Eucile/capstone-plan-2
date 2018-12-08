@@ -1,8 +1,8 @@
 import React from "react";
-import MainContent from "./MainContent";
 import PostList from './PostList';
 import { Link } from 'react-router-dom';
 import './assets/styles/MainBlog.css';
+import './assets/styles/UserDashboard.css';
 
 class MainBlog extends React.Component{
 
@@ -19,10 +19,11 @@ class MainBlog extends React.Component{
       <div>
         <div className="MainBlogStyle">
           <div>
-          <MainContent/>
-          <Link to="/NewPostControl">new post</Link>
-          <PostList
-          postList={this.getPosts()}/>
+            <div className="dash">
+              <button id="dash-button" type="submit"><Link to="/NewPostForm"><p>new post</p></Link></button>
+              <button id="dash-button" type="submit"><Link to="/LogInForm"><p>log out</p></Link></button>
+            </div>
+            <PostList postList={this.getPosts()}/>
           </div>
         </div>
       </div>

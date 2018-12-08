@@ -19,7 +19,7 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 * Master blog list limited to so many characters, with the full post visible on click.
 * Rich text editor feature that preserves whitespace and text formatting for bloggers.
 
-## NOTE: Clicking the "home" link routes you to the blog portion of this project which is currently informed by a firebase database, but the api key is needed to access it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own. (The firebaseConfig.js file should live inside the constants folder, which can be found in src) 
+## NOTE: Clicking the "home" link routes you to the blog portion of this project which is currently informed by a firebase database, but the api key is needed to access it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own. (The firebaseConfig.js file should live inside the constants folder, which can be found in src)
 
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 
@@ -39,6 +39,8 @@ A React CRUD app that allows a selection of authenticated users to update and cu
 * subtle page transitions and animations to the point of being almost subliminal but adding some sugar to the whole user flow thing
 
 ## Current Component Structure
+
+![Screenshot](component-tree.png)
 
 ### Technologies and Resources
 

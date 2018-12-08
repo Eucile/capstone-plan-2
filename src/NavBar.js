@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import './glitch.css';
+import './assets/styles/glitch.css';
 import './assets/styles/NavBar.css';
 
 function NavBar(){

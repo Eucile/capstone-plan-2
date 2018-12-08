@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainBlog from "./MainBlog";
 import { Switch, Route } from 'react-router-dom';
-import NewPostControl from './NewPostControl';
+import NewPostForm from './NewPostForm';
 import LogInForm from './LogInForm';
 import firebase from 'firebase';
 import constants from './constants';
@@ -27,9 +27,9 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={() => <MainBlog posts={posts} />} />
-        <Route path='/NewPostControl' component={() => <NewPostControl posts={posts} />}/>
+        <Route path='/NewPostForm' component={() => <NewPostForm posts={posts} />}/>
         <Route path='/LogInForm' component={() => <LogInForm users={users}/>} />
-        //   ADD EDIT ROUTING
+        //   ADD EDIT FORM ROUTING
         // ADD POST DISPLAY PAGE ROUTING
       </Switch>
       <Footer/>
