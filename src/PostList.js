@@ -4,7 +4,19 @@ import PropTypes from 'prop-types';
 
 function PostList(props) {
   return(
-    <div>
+    <div className="black-box">
+    <style jsx>{`
+      .black-box {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        background: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        padding: 3em;
+        width: 95%;
+      }
+    `}</style>
       {props.postList.map((post, index) =>
         <Post
           title={post.title}

@@ -13,7 +13,9 @@ body {
   background-size: cover;
   display: table;
   background-attachment: fixed;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
 }
 li {
   list-style: none;
