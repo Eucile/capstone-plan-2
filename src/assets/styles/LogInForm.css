@@ -27,12 +27,12 @@ button {
   text-transform: uppercase;
   letter-spacing: .2em;
 }
-.sign-in-button {
+.default-button {
   padding: .7em;
   margin-top: 1.5em;
 }
 button:hover {
-  opacity: 0.6;
+  opacity: 0.9;
   color: white;
   background: black;
   transition: 0.7s;
@@ -47,7 +47,7 @@ p {
   flex-flow: column nowrap;
   padding: 3em;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)), color-stop(.5, #696969));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5)), color-stop(.5, #505050));
 }
 .LogInStyles {
   display: flex;

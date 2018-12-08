@@ -17,7 +17,7 @@ class LogInForm extends React.Component{
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-        <button className='sign-in-button' type='submit'>sign in</button>
+        <button className='default-button' type='submit'>sign in</button>
       </form>
       </div>
     );
