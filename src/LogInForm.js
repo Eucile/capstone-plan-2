@@ -7,17 +7,17 @@ class LogInForm extends React.Component{
       <div className="LogInStyles">
       <form className="user-sign-in">
       <p className="p-sign">Sign into your account.</p>
-          <input
+          <input className="input-1"
             type='text'
             id='username'
             placeholder='username:'
             ref={(input) => {this.username = input;}}/>
-          <input
+          <input className="input-2"
             type='password'
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-        <button className='default-button' type='submit'>sign in</button>
+        <button className='login-button' type='submit'>sign in</button>
       </form>
       </div>
     );

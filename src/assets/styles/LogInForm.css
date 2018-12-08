@@ -1,7 +1,6 @@
 input, textarea {
   height: auto;
   color: white;
-  background: black;
   border-top: hidden;
   border-right: hidden;
   border-left: hidden;
@@ -14,6 +13,12 @@ input, textarea {
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+.input-2 {
+  background-color: black;
+}
+.input-1 {
+  background-color: black;
+}
 .p-sign {
   padding-bottom: 1em;
   border-bottom: 1px darkgray solid;
@@ -22,18 +27,18 @@ button {
   color: black;
   text-decoration: none;
   border: none;
-  border-radius: 25px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
-.default-button {
+.login-button {
   padding: .7em;
   margin-top: 1.5em;
+  background-color: #d7d8dc;
 }
 button:hover {
   opacity: 0.9;
-  color: white;
+  color: #00A9D6;
   background: black;
   transition: 0.7s;
 }
@@ -47,7 +52,7 @@ p {
   flex-flow: column nowrap;
   padding: 3em;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.5)), color-stop(.5, #505050));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.1)), to(rgba(0,0,0,0.1)), color-stop(.5, #505050));
 }
 .LogInStyles {
   display: flex;

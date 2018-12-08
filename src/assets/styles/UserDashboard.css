@@ -1,19 +1,40 @@
-.dash {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2em;
+.dash-tab {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0 auto;
+  padding: .4em;
 }
-.dash-button {
+.black {
   color: black;
-  margin: 5em;
 }
-.dash-button:hover {
-  color: white;
+.dash-tab-1 {
+  width: 629px;
+  margin-top: 8px;
+  background: #d7d8dc;
+  color: black;
 }
-.dash-styles {
-  display: flex;
-  justify-content: center;
+.dash-tab-2 {
+  width: 629px;
+  margin-top: 8px;
+  background: #b7b8bc;
+  color: black;
+}
+.dash-tab-3 {
+  width: 629px;
+  margin-top: 8px;
+  background: #a7a8ac;
+  color: black;
+}
+.dash-tab-4 {
+  width: 629px;
+  margin-top: 8px;
+  background: #97989c;
+  color: black;
+}
+.dash-tab:hover {
+  background: white;
+  opacity: 0.9;
+  transition: 0.7s;
 }
 .user-backdrop {
   display: flex;
@@ -23,11 +44,4 @@
   width: 60vw;
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.1)), color-stop(.5, black));
-}
-.LogInStyles {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 50vh;
-  margin: 3em 0;
 }
