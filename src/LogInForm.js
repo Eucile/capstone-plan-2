@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router';
 import './assets/styles/LogInForm.css';
 import ee from './assets/images/eucileglyph.png';
 
@@ -14,6 +15,9 @@ class LogInForm extends React.Component{
   }
 
   render() {
+    if(this.props.user) {
+      return (<div><Redirect to='/user' /></div>)
+    }
     return(
       <div className="LogInStyles">
         <form onSubmit={this.handleLogin} className="user-sign-in">

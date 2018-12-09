@@ -17,13 +17,13 @@ const { firebaseConfig } = constants;
 class App extends React.Component{
   constructor() {
     super();
+    this.state = {}
   }
 
   componentDidMount () {
     firebase.initializeApp(firebaseConfig);
     this.db = firebase.database();
     this.posts = this.db.ref('posts');
-    this.users = this.db.ref('users');
     this.setAuthObserver();
   }
 
@@ -42,7 +42,7 @@ class App extends React.Component{
         <Switch>
           <Route exact path='/' component={() => <MainBlog posts={this.posts} />} />
           <Route path='/new' component={() => <NewPostForm database={this.db} />} />
-          <Route path='/login' component={() => <LogInForm firebase={firebase}/>} />
+          <Route path='/login' component={() => <LogInForm user={this.state.user} firebase={firebase}/>} />
           <Route path='/user' component={() => <UserDashboard/>} />
           <Route path='/edit/:id' component={(props) => <EditPostForm database={this.db} {...props } />} />
           <Route path='/post/:id' component={(props) => <PostDisplayPage database={this.db} {...props } />} />
