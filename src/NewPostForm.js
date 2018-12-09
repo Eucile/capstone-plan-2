@@ -16,16 +16,17 @@ class NewPostForm extends React.Component{
   handleNewPostFormSubmission(event) {
     event.preventDefault();
     let timeStamp = moment().format('MM-DD-YYYY HH:mmA');
+    let id = v4();
     let post = {
       title: this._title.value,
       tagline: this._tagline.value,
       author: this._author.value,
       content: this._content.value,
-      id: v4(),
+      id: id,
       created_on: timeStamp,
       updated_on: timeStamp
     }
-    this.props.posts.push(post).then(
+    this.props.database.ref('posts/' + id).set(post).then(
       this.setState({isPosted: true})
     )
   }

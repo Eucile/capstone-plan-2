@@ -23,6 +23,7 @@ function PostList(props) {
           title={post.title}
           author={post.author}
           tagline={post.tagline}
+          id={post.id}
           content={post.content}
           created_on={post.created_on}
           key={post.id}

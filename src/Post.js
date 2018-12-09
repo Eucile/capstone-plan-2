@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import './assets/styles/Post.css';
 import "typeface-roboto";
 
@@ -35,7 +36,7 @@ function Post(props) {
           <h2 className="taglineStyles">“{props.tagline}”</h2>
           <p className="authorStyles">{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
-          <a className="read-more" href="#">Read more...</a>
+          <Link to={'post/'+ props.id}>Read more...</Link>
       </div>
     </div>
   );
@@ -46,6 +47,7 @@ Post.propTypes = {
   tagline: PropTypes.string,
   author: PropTypes.string,
   content: PropTypes.string,
+  id: PropTypes.string,
   created_on: PropTypes.string.isRequired,
 };
 

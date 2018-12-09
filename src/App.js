@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 import NewPostForm from './NewPostForm';
 import LogInForm from './LogInForm';
 import UserDashboard from './UserDashboard';
+import PostDisplayPage from './PostDisplayPage';
 import firebase from 'firebase';
 import constants from './constants';
 import './assets/styles/App.css';
@@ -28,11 +29,11 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={() => <MainBlog posts={posts} />} />
-        <Route path='/new' component={() => <NewPostForm posts={posts} />}/>
+        <Route path='/new' component={() => <NewPostForm database={db} />} />
         <Route path='/login' component={() => <LogInForm users={users}/>} />
         <Route path='/user' component={() => <UserDashboard/>} />
         //   ADD EDIT FORM ROUTING
-        // ADD POST DISPLAY PAGE ROUTING
+        <Route path='/post/:id' component={(props) => <PostDisplayPage database={db} {...props } />} />
       </Switch>
       <Footer/>
     </div>
