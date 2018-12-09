@@ -20,7 +20,7 @@ class App extends React.Component{
     this.state = {}
   }
 
-  componentDidMount () {
+  componentWillMount () {
     firebase.initializeApp(firebaseConfig);
     this.db = firebase.database();
     this.posts = this.db.ref('posts');
