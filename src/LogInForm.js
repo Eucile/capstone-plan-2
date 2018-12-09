@@ -3,24 +3,34 @@ import './assets/styles/LogInForm.css';
 import ee from './assets/images/eucileglyph.png';
 
 class LogInForm extends React.Component{
+
+  handleLogin = () => {
+    this.props.firebase.auth().signInWithEmailAndPassword(this.email.value, this.password.value).then(console.log('login')).catch(function(error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ...
+    });
+  }
+
   render() {
     return(
       <div className="LogInStyles">
-      <form className="user-sign-in">
-      <img className="e-styles" src={ee}/>
-      <p className="p-sign">Sign into your account.</p>
+        <form onSubmit={this.handleLogin} className="user-sign-in">
+          <img className="e-styles" src={ee}/>
+          <p className="p-sign">Sign into your account.</p>
           <input className="input-1"
             type='text'
             id='username'
-            placeholder='username:'
-            ref={(input) => {this.username = input;}}/>
+            placeholder='email:'
+            ref={(input) => {this.email = input;}}/>
           <input className="input-2"
             type='password'
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-        <button className='login-button' type='submit'>sign in</button>
-      </form>
+          <button className='login-button' type='submit'>sign in</button>
+        </form>
       </div>
     );
   }

@@ -14,30 +14,43 @@ import './assets/styles/App.css';
 
 const { firebaseConfig } = constants;
 
-firebase.initializeApp(firebaseConfig);
-var db = firebase.database();
-const posts = db.ref('posts');
-const users = db.ref('users');
+class App extends React.Component{
+  constructor() {
+    super();
+  }
 
-function App(){
-  return (
-    <div className="mainDiv">
-    <style global jsx>{`
-      @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
-        }
-    `}</style>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={() => <MainBlog posts={posts} />} />
-        <Route path='/new' component={() => <NewPostForm database={db} />} />
-        <Route path='/login' component={() => <LogInForm users={users}/>} />
-        <Route path='/user' component={() => <UserDashboard/>} />
-        <Route path='/edit/:id' component={(props) => <EditPostForm database={db} {...props } />} />
-        <Route path='/post/:id' component={(props) => <PostDisplayPage database={db} {...props } />} />
-      </Switch>
-      <Footer/>
-    </div>
-  );
+  componentDidMount () {
+    firebase.initializeApp(firebaseConfig);
+    this.db = firebase.database();
+    this.posts = this.db.ref('posts');
+    this.users = this.db.ref('users');
+    this.setAuthObserver();
+  }
+
+  setAuthObserver = () => {
+    return firebase.auth().onAuthStateChanged(user => this.setState({ user }));
+  }
+
+  render() {
+    return (
+      <div className="mainDiv">
+      <style global jsx>{`
+        @import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+          }
+      `}</style>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={() => <MainBlog posts={this.posts} />} />
+          <Route path='/new' component={() => <NewPostForm database={this.db} />} />
+          <Route path='/login' component={() => <LogInForm firebase={firebase}/>} />
+          <Route path='/user' component={() => <UserDashboard/>} />
+          <Route path='/edit/:id' component={(props) => <EditPostForm database={this.db} {...props } />} />
+          <Route path='/post/:id' component={(props) => <PostDisplayPage database={this.db} {...props } />} />
+        </Switch>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;
