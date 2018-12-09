@@ -61,7 +61,7 @@ class NewPostForm extends React.Component{
             placeholder='Content:'
             ref={(textarea) => {this.content = textarea;}}/>
           </div>
-          <button className="form-content default-button submit" type='submit'>Submit</button>
+          <button className="form-content dash-tab-3 submit" type='submit'>Submit</button>
         </form>
       </div>
     )

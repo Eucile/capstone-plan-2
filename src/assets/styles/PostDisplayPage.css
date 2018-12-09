@@ -4,30 +4,35 @@
   width: 100%;
 }
 
+.e-menu {
+  margin-top: 3em;
+}
+
 .post-content {
   padding: 2em;
+  margin: 2em auto;
 }
 
 .edit-tab {
-  width: 130px;
+  width: 108px;
   margin-top: 8px;
   background: #d7d8dc;
   color: black;
 }
 .delete-tab {
-  width: 130px;
+  width: 108px;
   margin-top: 8px;
   background: #b7b8bc;
   color: black;
 }
 .comment-tab {
-  width: 130px;
+  width: 108px;
   margin-top: 8px;
   background: #a7a8ac;
   color: black;
 }
 .bookmark-tab {
-  width: 130px;
+  width: 108px;
   margin-top: 8px;
   background: #97989c;
   color: black;

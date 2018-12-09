@@ -7,26 +7,30 @@
 .black {
   color: black;
 }
+.logo-styles {
+  width: 515px;
+  margin: 0 auto;
+}
 .dash-tab-1 {
-  width: 600px;
+  width: 500px;
   margin-top: 8px;
   background: #d7d8dc;
   color: black;
 }
 .dash-tab-2 {
-  width: 600px;
+  width: 500px;
   margin-top: 8px;
   background: #b7b8bc;
   color: black;
 }
 .dash-tab-3 {
-  width: 600px;
+  width: 500px;
   margin-top: 8px;
   background: #a7a8ac;
   color: black;
 }
 .dash-tab-4 {
-  width: 600px;
+  width: 500px;
   margin-top: 8px;
   background: #97989c;
   color: black;

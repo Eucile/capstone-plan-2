@@ -3,6 +3,7 @@ import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import './assets/styles/Buttons.css';
 import './assets/styles/PostDisplayPage.css';
+import glyph from './assets/images/oneglyph.png';
 
 class PostDisplayPage extends React.Component{
   constructor() {
@@ -47,7 +48,8 @@ class PostDisplayPage extends React.Component{
           <h3>posted by {this.state.author} on {this.state.created_on}</h3>
           <p>{this.state.content}</p>
         </div>
-        <div>
+        <div className="e-menu">
+          <img src={glyph}/>
           <button className="defualt-button edit-button edit-tab"><Link to={'/edit/' + this.props.match.params.id}>edit</Link></button>
           <button className="default-button delete-button delete-tab" onClick={this.deletePost}>delete</button>
           <button className="defualt-button edit-button comment-tab"><Link to={'/edit/' + this.props.match.params.id}>comment</Link></button>
