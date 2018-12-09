@@ -405,10 +405,6 @@
   }
 }
 
-a:hover {
-animation: glitch 0.2s infinite;
-}
-
 .infinite-glitch {
   animation: glitch 0.2s infinite;
 }

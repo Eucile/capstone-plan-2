@@ -18,10 +18,10 @@ class NewPostForm extends React.Component{
     let timeStamp = moment().format('MM-DD-YYYY HH:mmA');
     let id = v4();
     let post = {
-      title: this._title.value,
-      tagline: this._tagline.value,
-      author: this._author.value,
-      content: this._content.value,
+      title: this.title.value,
+      tagline: this.tagline.value,
+      author: this.author.value,
+      content: this.content.value,
       id: id,
       created_on: timeStamp,
       updated_on: timeStamp
@@ -43,22 +43,22 @@ class NewPostForm extends React.Component{
               type='text'
               id='title'
               placeholder='Title:'
-              ref={(input) => {this._title = input;}}/>
+              ref={(input) => {this.title = input;}}/>
             <input
               type='text'
               id='tagline'
               placeholder='tagline:'
-              ref={(input) => {this._tagline = input;}}/>
+              ref={(input) => {this.tagline = input;}}/>
             <input
               type='text'
               id='author'
               placeholder='Author name:'
-              ref={(input) => {this._author = input;}}/>
+              ref={(input) => {this.author = input;}}/>
           </div>
           <textarea className="content-box"
             id='content'
             placeholder='Content:'
-            ref={(textarea) => {this._content = textarea;}}/>
+            ref={(textarea) => {this.content = textarea;}}/>
           <button className="default-button" type='submit'>Submit</button>
         </form>
       </div>
