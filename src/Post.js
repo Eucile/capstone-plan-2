@@ -36,7 +36,7 @@ function Post(props) {
           <h2 className="taglineStyles">“{props.tagline}”</h2>
           <p className="authorStyles">{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
-          <Link to={'post/'+ props.id}>Read more...</Link>
+          <Link to={'/post/'+ props.id}>Read more...</Link>
       </div>
     </div>
   );

@@ -12,6 +12,16 @@ class EditPostForm extends React.Component{
     };
   }
 
+  componentWillMount() {
+    this.props.database.ref('posts/' + this.props.match.params.id).once('value').then(function(snapshot) {
+      let post = snapshot.val();
+      this._title = post.title;
+      this._tagline = post.tagline;
+      this._author = post.author;
+      this._content = post.content;
+    });
+  }
+
   render () {
     if (this.state.isEdited === true) {
       return (<div><Redirect to='/' /></div>) //REDIRECT TO PostDisplayPage
@@ -41,7 +51,6 @@ class EditPostForm extends React.Component{
             placeholder='Content:'
             ref={(textarea) => {this._content = textarea;}}/>
           <button type='submit'>Save</button>
-
         </form>
       </div>
     )

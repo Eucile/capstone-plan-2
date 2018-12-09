@@ -1,5 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 
 class PostDisplayPage extends React.Component{
   constructor() {
@@ -23,6 +24,7 @@ class PostDisplayPage extends React.Component{
     return (
       <div>
         {this.props.match.params.id}
+        <div className="edit-button"><Link to={'/edit/' + this.props.match.params.id}>EDIT</Link></div>
         <button className="delete-button" onClick={this.deletePost}>DELETE</button>
       </div>
     )

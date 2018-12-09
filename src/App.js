@@ -7,10 +7,10 @@ import NewPostForm from './NewPostForm';
 import LogInForm from './LogInForm';
 import UserDashboard from './UserDashboard';
 import PostDisplayPage from './PostDisplayPage';
+import EditPostForm from './EditPostForm';
 import firebase from 'firebase';
 import constants from './constants';
 import './assets/styles/App.css';
-
 
 const { firebaseConfig } = constants;
 
@@ -32,7 +32,7 @@ function App(){
         <Route path='/new' component={() => <NewPostForm database={db} />} />
         <Route path='/login' component={() => <LogInForm users={users}/>} />
         <Route path='/user' component={() => <UserDashboard/>} />
-        //   ADD EDIT FORM ROUTING
+        <Route path='/edit/:id' component={(props) => <EditPostForm database={db} {...props } />} />
         <Route path='/post/:id' component={(props) => <PostDisplayPage database={db} {...props } />} />
       </Switch>
       <Footer/>
