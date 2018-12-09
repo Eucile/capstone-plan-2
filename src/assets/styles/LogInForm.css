@@ -1,23 +1,25 @@
 input, textarea {
   height: auto;
-  color: white;
-  border-top: hidden;
-  border-right: hidden;
-  border-left: hidden;
   border-radius: 2px;
-  border-bottom: 1px solid #8c8c8c;
   padding: 7px;
   margin: .4em;
+  font-size: .75em;
+}
+.input-2 {
+  background-color: black;
   font-size: .75em;
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
-}
-.input-2 {
-  background-color: black;
+  border: hidden;
 }
 .input-1 {
   background-color: black;
+  font-size: .75em;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: hidden;
 }
 .p-sign {
   padding-bottom: 1em;
@@ -32,9 +34,9 @@ button {
   letter-spacing: .2em;
 }
 .login-button {
-  padding: .7em;
-  margin-top: 1.5em;
   background-color: #d7d8dc;
+  padding: 1.1em;
+  line-height: .2em;
 }
 button:hover {
   opacity: 0.9;

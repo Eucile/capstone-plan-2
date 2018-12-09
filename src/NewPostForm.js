@@ -38,28 +38,30 @@ class NewPostForm extends React.Component{
     return (
       <div>
         <form className="form-box" onSubmit={this.handleNewPostFormSubmission}>
-          <div>
-            <input
-              type='text'
-              id='title'
-              placeholder='Title:'
-              ref={(input) => {this.title = input;}}/>
-            <input
-              type='text'
-              id='tagline'
-              placeholder='tagline:'
-              ref={(input) => {this.tagline = input;}}/>
-            <input
-              type='text'
-              id='author'
-              placeholder='Author name:'
-              ref={(input) => {this.author = input;}}/>
-          </div>
-          <textarea className="content-box"
+          <div className="form-content">
+            <div className="top-inputs">
+              <input
+                type='text'
+                id='title'
+                placeholder='Title:'
+                ref={(input) => {this.title = input;}}/>
+              <input
+                type='text'
+                id='tagline'
+                placeholder='tagline:'
+                ref={(input) => {this.tagline = input;}}/>
+              <input
+                type='text'
+                id='author'
+                placeholder='Author name:'
+                ref={(input) => {this.author = input;}}/>
+            </div>
+          <textarea className="this-content-box"
             id='content'
             placeholder='Content:'
             ref={(textarea) => {this.content = textarea;}}/>
-          <button className="default-button" type='submit'>Submit</button>
+          </div>
+          <button className="form-content default-button submit" type='submit'>Submit</button>
         </form>
       </div>
     )

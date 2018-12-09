@@ -20,7 +20,7 @@ class MainBlog extends React.Component{
         <div className="MainBlogStyle">
           <div>
             <div className="dash">
-              <button><Link to="/new"><span className="dash-button">new post</span></Link></button>
+              <button className="default-button"><Link to="/new">new post</Link></button>
             </div>
             <PostList postList={this.getPosts()}/>
           </div>

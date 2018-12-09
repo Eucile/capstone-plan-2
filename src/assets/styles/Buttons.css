@@ -1,0 +1,26 @@
+.edit-button a {
+  color: black;
+}
+
+.edit-button {
+  background-color: #d7d8dc;
+  padding: 1em;
+  line-height: .2em;
+  width: 100px;
+  border-radius: 0;
+}
+
+.delete-button {
+  background-color: #d7d8dc;
+  padding: 1em;
+  line-height: .2em;
+  width: 100px;
+  border-radius: 0;
+}
+
+.edit-button a:hover {
+  opacity: 0.9;
+  color: #00A9D6;
+  background: black;
+  transition: 0.7s;
+}

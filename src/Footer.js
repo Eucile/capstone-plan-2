@@ -5,7 +5,7 @@ function Footer(){
 
   return (
     <div className="FooterStyles">
-      <p className="FooterDots">::..::</p>
+      <p className="glitch FooterDots">::..::</p>    
     </div>
   );
 }

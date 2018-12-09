@@ -32,11 +32,11 @@ function Post(props) {
         }
       `}</style>
       <div className="blurb-box">
-          <h1 className="titleStyles">{props.title}</h1>
+          <Link to={'/post/'+ props.id}><h1 className="titleStyles">{props.title}</h1></Link>
           <h2 className="taglineStyles">“{props.tagline}”</h2>
           <p className="authorStyles">{props.author} - posted on {props.created_on}</p>
           <p>{props.content}</p>
-          <Link to={'/post/'+ props.id}>Read more...</Link>
+          <Link to={'/post/'+ props.id}><span className="readmore">Read more...</span></Link>
       </div>
     </div>
   );

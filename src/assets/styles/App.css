@@ -22,4 +22,8 @@ li {
 }
 a {
   text-decoration: none;
+  cursor: crosshair;
+}
+button:hover {
+  cursor: crosshair;
 }

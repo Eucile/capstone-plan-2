@@ -1,6 +1,8 @@
 import React from 'react';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
+import './assets/styles/Buttons.css';
+import './assets/styles/PostDisplayPage.css';
 
 class PostDisplayPage extends React.Component{
   constructor() {
@@ -39,10 +41,18 @@ class PostDisplayPage extends React.Component{
       return (<div><Redirect to='/' /></div>)
     }
     return (
-      <div>
-        {this.state.content}
-        <div className="edit-button"><Link to={'/edit/' + this.props.match.params.id}>EDIT</Link></div>
-        <button className="delete-button" onClick={this.deletePost}>DELETE</button>
+      <div className="full-post-container">
+        <div className="post-content">
+          <h1>{this.state.title}</h1>
+          <h3>posted by {this.state.author} on {this.state.created_on}</h3>
+          <p>{this.state.content}</p>
+        </div>
+        <div>
+          <button className="defualt-button edit-button edit-tab"><Link to={'/edit/' + this.props.match.params.id}>edit</Link></button>
+          <button className="default-button delete-button delete-tab" onClick={this.deletePost}>delete</button>
+          <button className="defualt-button edit-button comment-tab"><Link to={'/edit/' + this.props.match.params.id}>comment</Link></button>
+          <button className="default-button delete-button bookmark-tab" onClick={this.deletePost}>bookmark</button>
+        </div>
       </div>
     )
   }

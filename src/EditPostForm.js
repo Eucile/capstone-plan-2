@@ -69,7 +69,7 @@ class EditPostForm extends React.Component{
 
   render () {
     if (this.state.isEdited === true) {
-      return (<div><Redirect to={'/post/' + this.props.match.params.id} /></div>) 
+      return (<div><Redirect to={'/post/' + this.props.match.params.id} /></div>)
     }
     return (
       <div>
@@ -86,7 +86,7 @@ class EditPostForm extends React.Component{
               type='text'
               id='tagline'
               value= {this.state.tagline}
-              placeholder='tagline:'
+              placeholder='Tagline:'
               onChange={e => {this.handleStateChange(e.target.value, 'tagline')}}
             />
             <input

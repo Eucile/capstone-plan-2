@@ -11,6 +11,9 @@
   text-decoration: none;
   color: white;
 }
+.navStyles:hover {
+  animation: glitch 0.2s infinite;
+}
 .user-icon {
   width: 40px;
 }

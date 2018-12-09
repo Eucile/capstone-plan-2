@@ -1,0 +1,34 @@
+.full-post-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.post-content {
+  padding: 2em;
+}
+
+.edit-tab {
+  width: 130px;
+  margin-top: 8px;
+  background: #d7d8dc;
+  color: black;
+}
+.delete-tab {
+  width: 130px;
+  margin-top: 8px;
+  background: #b7b8bc;
+  color: black;
+}
+.comment-tab {
+  width: 130px;
+  margin-top: 8px;
+  background: #a7a8ac;
+  color: black;
+}
+.bookmark-tab {
+  width: 130px;
+  margin-top: 8px;
+  background: #97989c;
+  color: black;
+}

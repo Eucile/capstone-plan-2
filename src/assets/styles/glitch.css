@@ -408,3 +408,6 @@
 .infinite-glitch {
   animation: glitch 0.2s infinite;
 }
+.glitch:hover {
+  animation: glitch 0.2s infinite;
+}
