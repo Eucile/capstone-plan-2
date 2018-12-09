@@ -21,6 +21,9 @@ input, textarea {
   text-transform: uppercase;
   border: hidden;
 }
+.e-styles {
+  width: 200px;
+}
 .p-sign {
   padding-bottom: 1em;
   border-bottom: 1px darkgray solid;
