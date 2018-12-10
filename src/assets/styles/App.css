@@ -13,7 +13,7 @@ body {
   background-size: cover;
   display: table;
   background-attachment: fixed;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-weight: 100;
   font-size: 1.1em;
 }
@@ -23,6 +23,9 @@ li {
 a {
   text-decoration: none;
   cursor: crosshair;
+  color: black;
+}
+a:hover {
   color: #00A9D6;
 }
 button:hover {

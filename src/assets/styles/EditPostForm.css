@@ -17,7 +17,7 @@ button {
 }
 .form-box {
   background: rgba(0, 0, 0, .7);
-  padding: 1.25em 5.882352941176% 20px;
+  /* padding: 1.25em 5.882352941176% 20px; */
   margin: 0 auto;
 }
 .content-box {

@@ -1,13 +1,11 @@
 import React from 'react';
 import { Redirect } from 'react-router';
-import { Link } from 'react-router-dom';
-import './assets/styles/LogInForm.css';
 import ee from './assets/images/eucileglyph.png';
 
-class LogInForm extends React.Component{
+class SignupForm extends React.Component{
 
-  handleLogin = () => {
-    this.props.firebase.auth().signInWithEmailAndPassword(this.email.value, this.password.value).then(console.log('login')).catch(function(error) {
+  handleSignup = () => {
+    this.props.firebase.auth().createUserWithEmailAndPassword(this.email.value, this.password.value).then(console.log('sign up')).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
@@ -16,14 +14,12 @@ class LogInForm extends React.Component{
   }
 
   render() {
-    if(this.props.user) {
-      return (<div><Redirect to='/user' /></div>)
-    }
+
     return(
       <div className="LogInStyles">
-        <form onSubmit={this.handleLogin} className="user-sign-in">
+        <form onSubmit={this.handleSignup} className="user-sign-in">
           <img className="e-styles" src={ee}/>
-          <p className="p-sign">Sign into your account.</p>
+          <p className="p-sign">Create an account.</p>
           <input className="input-1"
             type='text'
             id='username'
@@ -34,13 +30,11 @@ class LogInForm extends React.Component{
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-          <button className='login-button' type='submit'>sign in</button>
-          <p className="or">-OR-</p>
-          <button className='login-button' type='submit'><Link to="/signup">sign up</Link></button>
+          <button className='login-button' type='submit'>sign up</button>
         </form>
       </div>
     );
   }
 }
 
-export default LogInForm;
+export default SignupForm;

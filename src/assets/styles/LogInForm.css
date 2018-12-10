@@ -21,6 +21,9 @@ input, textarea {
   text-transform: uppercase;
   border: hidden;
 }
+.or {
+  text-align: center;
+}
 .e-styles {
   width: 200px;
 }

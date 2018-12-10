@@ -4,6 +4,7 @@ import App from './App';
 import { AppContainer } from 'react-hot-loader';
 import { HashRouter } from 'react-router-dom';
 import "typeface-roboto";
+import "typeface-exo";
 
 
 const render = (Component) => {
