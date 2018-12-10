@@ -5,9 +5,7 @@ import ee from './assets/images/eucileglyph.png';
 class SignupForm extends React.Component{
 
   handleSignup = () => {
-    this.props.firebase.auth().createUserWithEmailAndPassword(this.email.value, this.password.value).then(function(data) {
-      this.props.firebase.database().ref('users/' + data.user.uid).set({name: 'test'})
-    }).catch(function(error) {
+    this.props.firebase.auth().createUserWithEmailAndPassword(this.name.value, this.email.value, this.password.value).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;

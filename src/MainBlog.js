@@ -19,9 +19,10 @@ class MainBlog extends React.Component{
       <div>
         <div className="MainBlogStyle">
           <div>
+            {this.props.userinfo && this.props.userinfo.usertype == 'admin' &&
             <div className="dash">
               <button className="default-button"><Link to="/new">new post</Link></button>
-            </div>
+            </div>}
             <PostList postList={this.getPosts()}/>
           </div>
         </div>

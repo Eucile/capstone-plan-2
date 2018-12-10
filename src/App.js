@@ -28,8 +28,20 @@ class App extends React.Component{
     this.setAuthObserver();
   }
 
+  componentWillUpdate () {
+    this.getCurrentUser();
+  }
+
   setAuthObserver = () => {
     return firebase.auth().onAuthStateChanged(user => this.setState({ user }));
+  }
+
+  getCurrentUser = () => {
+    if(this.state.user) {
+      this.db.ref('users/' + this.state.user.uid).once('value').then((snapshot) => {
+        this.userinfo = snapshot.val();
+      });
+    }
   }
 
   render() {
@@ -41,7 +53,7 @@ class App extends React.Component{
       `}</style>
         <Header/>
         <Switch>
-          <Route exact path='/' component={() => <MainBlog posts={this.posts} />} />
+          <Route exact path='/' component={() => <MainBlog userinfo={this.userinfo} posts={this.posts} user={this.state.user} />} />
           <Route path='/new' component={() => <NewPostForm database={this.db} />} />
           <Route path='/login' component={() => <LogInForm user={this.state.user} firebase={firebase}/>} />
           <Route path='/signup' component={() => <SignupForm user={this.state.user} firebase={firebase}/>} />
