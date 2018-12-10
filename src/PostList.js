@@ -10,10 +10,9 @@ function PostList(props) {
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
-        background: rgb(167,167,167, 0.3);
+        background: rgb(255,255,255, 0.2);
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
-        padding: 2em;
         width: 90%;
         margin: 0 auto;
       }

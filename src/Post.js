@@ -15,27 +15,31 @@ function Post(props) {
           font-weight: 300;
         }
         .blurb-box {
-          width: 390px;
-          height: 250px;
+          width: 750px;
+          height: 200px;
           border-bottom: 1px solid #d9d9d9;
           background: white;
           color: black;
-          padding: 1em;
+          padding: 2em;
           margin: 1em;
-          overflow: hidden;
           box-shadow: 0px 10px 30px rgba(0,0,0, 1.3);
+        }
+        .content-hidden {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
         .read-more {
           text-decoration;
-          font-weight: 500;
+          font-weight: 700;
           color: black;
         }
       `}</style>
       <div className="blurb-box">
           <Link to={'/post/'+ props.id}><h1 className="titleStyles">{props.title}</h1></Link>
           <h2 className="taglineStyles">“{props.tagline}”</h2>
-          <p className="authorStyles">{props.author} - posted on {props.created_on}</p>
-          <p>{props.content}</p>
+          <p className="authorStyles">posted by <strong>{props.author}</strong> — on {props.created_on}</p>
+          <p className="content-hidden p-text">{props.content}</p>
           <Link to={'/post/'+ props.id}><span className="readmore">Read more...</span></Link>
       </div>
     </div>

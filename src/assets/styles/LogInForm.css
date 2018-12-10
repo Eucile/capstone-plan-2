@@ -25,6 +25,7 @@ input, textarea {
 }
 .or {
   text-align: center;
+  padding-right: 11px;
 }
 .e-styles {
   width: 200px;
