@@ -10,6 +10,7 @@ class UserDashboard extends React.Component{
     return(
       <div className="user-backdrop">
         <img className ="logo-styles" src={logo}/>
+        <div className="dash-tab dash-tab-welcome"></div>
         <div className="dash-tab dash-tab-1"><Link to="/new"><span className="black">NEW POST</span></Link></div>
         <div className="dash-tab dash-tab-2"><span className="black">MY STUFF</span></div>
         <div className="dash-tab dash-tab-3"><Link to="/"><span className="black">BLOG HOME</span></Link></div>

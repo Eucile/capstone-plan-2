@@ -8,7 +8,7 @@ class LogInForm extends React.Component{
 
   handleLogin = () => {
     this.props.firebase.auth().signInWithEmailAndPassword(this.email.value, this.password.value).then(console.log('login')).catch(function(error) {
-      // Handle Errors here.
+      alert('nope');
       var errorCode = error.code;
       var errorMessage = error.message;
       // ...
@@ -34,9 +34,9 @@ class LogInForm extends React.Component{
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-          <button className='login-button' type='submit'>sign in</button>
+          <button className='login-button' type='submit'>log in</button>
           <p className="or">-OR-</p>
-          <button className='login-button' type='submit'><Link to="/signup">sign up</Link></button>
+          <button className='signup-button' type='submit'><Link to="/signup">sign up</Link></button>
         </form>
       </div>
     );

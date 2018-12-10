@@ -12,6 +12,12 @@
   height: 70px;
   margin: 0 auto;
 }
+.dash-tab-welcome {
+  background:rgba(240,240,240);
+  width: 500px;
+  margin-top: 8px;
+  color: black;
+}
 .dash-tab-1 {
   width: 500px;
   margin-top: 8px;

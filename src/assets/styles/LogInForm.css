@@ -12,6 +12,7 @@ input, textarea {
   letter-spacing: .1em;
   text-transform: uppercase;
   border: hidden;
+  width: 190px;
 }
 .input-1 {
   background-color: black;
@@ -20,6 +21,7 @@ input, textarea {
   letter-spacing: .1em;
   text-transform: uppercase;
   border: hidden;
+  width: 190px;
 }
 .or {
   text-align: center;
@@ -43,6 +45,13 @@ button {
   background-color: #d7d8dc;
   padding: 1.1em;
   line-height: .2em;
+}
+.signup-button {
+  background-color: #d7d8dc;
+  padding: 1.1em;
+  line-height: .2em;
+  position: absolute;
+  top: 400px;
 }
 button:hover {
   opacity: 0.9;

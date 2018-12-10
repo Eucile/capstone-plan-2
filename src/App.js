@@ -45,7 +45,7 @@ class App extends React.Component{
           <Route path='/new' component={() => <NewPostForm database={this.db} />} />
           <Route path='/login' component={() => <LogInForm user={this.state.user} firebase={firebase}/>} />
           <Route path='/signup' component={() => <SignupForm user={this.state.user} firebase={firebase}/>} />
-          <Route path='/user' component={() => <UserDashboard firebase={firebase} />} />
+          <Route path='/user' component={() => <UserDashboard user={this.state.user} firebase={firebase} />} />
           <Route path='/edit/:id' component={(props) => <EditPostForm database={this.db} {...props } />} />
           <Route path='/post/:id' component={(props) => <PostDisplayPage database={this.db} {...props } />} />
         </Switch>
