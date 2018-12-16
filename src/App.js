@@ -39,7 +39,7 @@ class App extends React.Component{
   getCurrentUser = () => {
     if(this.state.user) {
       this.db.ref('users/' + this.state.user.uid).once('value').then((snapshot) => {
-        this.userinfo = snapshot.val();
+        this.userinfo = snapshot.val
       });
     }
   }

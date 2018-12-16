@@ -10,11 +10,11 @@ function PostList(props) {
         display: flex;
         justify-content: space-around;
         flex-flow: row wrap;
-        background: rgb(255,255,255, 0.2);
+        background: white;
         font-family: 'Roboto', sans-serif;
         font-weight: 100;
-        width: 90%;
-        margin: 0 auto;
+        width: 95%;
+        margin: 20px auto;
       }
     `}</style>
       {props.postList.map((post, index) =>

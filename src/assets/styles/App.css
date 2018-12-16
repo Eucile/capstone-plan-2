@@ -25,9 +25,3 @@ a {
   cursor: crosshair;
   color: black;
 }
-a:hover {
-  color: #00A9D6;
-}
-button:hover {
-  cursor: crosshair;
-}

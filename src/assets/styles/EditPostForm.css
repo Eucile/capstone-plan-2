@@ -16,11 +16,11 @@ button {
   letter-spacing: .2em;
 }
 .form-box {
-  background: rgba(0, 0, 0, .7);
+  /* background: rgba(0, 0, 0, .7); */
   /* padding: 1.25em 5.882352941176% 20px; */
   margin: 0 auto;
 }
 .content-box {
-  width: 87%;
-  height: 300px;
+  /* width: 87%; */
+  /* height: 300px; */
 }

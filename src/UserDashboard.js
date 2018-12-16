@@ -13,7 +13,7 @@ class UserDashboard extends React.Component{
         <div className="dash-tab dash-tab-welcome">{this.props.user && this.props.user.email}</div>
         <div className="dash-tab dash-tab-1"><Link to="/new"><span className="black">NEW POST</span></Link></div>
         <div className="dash-tab dash-tab-2"><span className="black">MY STUFF</span></div>
-        <div className="dash-tab dash-tab-3"><Link to="/"><span className="black">BLOG HOME</span></Link></div>
+        <div className="dash-tab dash-tab-3"><Link className="hover" to="/"><span className="black">BLOG HOME</span></Link></div>
         <div className="dash-tab dash-tab-4"><LogoutButton firebase={this.props.firebase}/></div>
       </div>
     );

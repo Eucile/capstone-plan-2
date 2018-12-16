@@ -1,6 +1,7 @@
 import React from "react";
 import PostList from './PostList';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 import './assets/styles/MainBlog.css';
 import './assets/styles/UserDashboard.css';
 
