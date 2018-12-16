@@ -4,6 +4,7 @@ import moment from 'moment';
 import { Redirect } from 'react-router';
 import './assets/styles/NewPostForm.css';
 import RichTextEditor from './RichTextEditor';
+import { convertFromRaw } from 'draft-js'
 
 class NewPostForm extends React.Component{
   constructor() {
@@ -22,7 +23,7 @@ class NewPostForm extends React.Component{
       title: this.title.value,
       tagline: this.tagline.value,
       author: this.author.value,
-      content: this.content.value,
+      content: this.content.getContent(),
       id: id,
       created_on: timeStamp,
       updated_on: timeStamp
@@ -57,11 +58,8 @@ class NewPostForm extends React.Component{
                 placeholder='Author name:'
                 ref={(input) => {this.author = input;}}/>
             </div>
-            <RichTextEditor/>
-          <textarea className="this-content-box"
-            id='content'
-            placeholder='Content:'
-            ref={(textarea) => {this.content = textarea;}}/>
+            <RichTextEditor
+              ref={(RichTextEditor) => {this.content = RichTextEditor;}}/>
           </div>
           <button className="form-content dash-tab-3 submit-button" type='submit'>Submit</button>
         </form>
