@@ -19,10 +19,10 @@ class App extends React.Component{
   constructor() {
     super();
     this.state = {}
-    firebase.initializeApp(firebaseConfig);
   }
 
   componentWillMount () {
+    if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig); }
     this.db = firebase.database();
     this.posts = this.db.ref('posts');
     this.setAuthObserver();

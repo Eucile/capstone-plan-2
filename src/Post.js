@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import './assets/styles/Post.css';
 import "typeface-roboto";
+import { convertFromRaw } from 'draft-js';
+import draftToHtml from 'draftjs-to-html';
 
 function Post(props) {
   return(
@@ -62,7 +64,7 @@ function Post(props) {
       <div className="blurb-box">
           <Link to={'/post/'+ props.id}><h1 className="titleStyles">{props.title}</h1></Link>
           <p className="authorStyles">posted by <strong>{props.author}</strong> — on {props.created_on}</p>
-          <p className="content-hidden p-text">{props.content}</p>
+          <p className="content-hidden p-text">{props.content &&  draftToHtml(props.content)}</p>
           <Link to={'/post/'+ props.id}><span className="read-more">Read more...</span></Link>
       </div>
     </div>
