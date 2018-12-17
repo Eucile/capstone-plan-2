@@ -6,7 +6,8 @@ import ee from './assets/images/eucileglyph.png';
 
 class LogInForm extends React.Component{
 
-  handleLogin = () => {
+  handleLogin = (event) => {
+    event.preventDefault();
     this.props.firebase.auth().signInWithEmailAndPassword(this.email.value, this.password.value).then(console.log('login')).catch(function(error) {
       alert('nope');
       var errorCode = error.code;
