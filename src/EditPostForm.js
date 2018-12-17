@@ -2,6 +2,7 @@ import React from 'react';
 import { v4 } from 'uuid';
 import moment from 'moment';
 import { Redirect } from 'react-router';
+import RichTextEditor from './RichTextEditor';
 import './assets/styles/EditPostForm.css';
 
 class EditPostForm extends React.Component{
@@ -60,7 +61,8 @@ class EditPostForm extends React.Component{
       content: this.state.content,
       id: this.props.match.params.id,
       created_on: this.state.created_on,
-      updated_on: timeStamp
+      updated_on: timeStamp,
+      user_id: this.props.user.uid
     }
     this.props.database.ref('posts/' + this.props.match.params.id).set(post).then(
       this.setState({isEdited: true})
@@ -97,12 +99,10 @@ class EditPostForm extends React.Component{
               onChange={e => {this.handleStateChange(e.target.value, 'author')}}
             />
           </div>
-          <textarea className="content-box"
-            id='content'
-            value= {this.state.content}
-            placeholder='Content:'
-            onChange={e => {this.handleStateChange(e.target.value, 'content')}}
-          />
+          <RichTextEditor
+            initialState= {this.state.content}
+            handleStateChange={this.handleStateChange}
+            ref={(RichTextEditor) => {this.content = RichTextEditor;}}/>
           <button type='submit'>Save</button>
         </form>
       </div>

@@ -8,18 +8,33 @@ import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 
 
 class RichTextEditor extends Component {
+  constructor(props) {
+    super(props)
+    this.initialized = false
+  }
   state = {
     editorState: EditorState.createEmpty(),
   }
 
+  componentWillReceiveProps(newProps) {
+    if(!this.initialized && newProps.initialState != '') {
+      this.initialized = true
+      const contentState = ContentState.createFromBlockArray(htmlToDraft(newProps.initialState).contentBlocks);
+      this.setState({
+        editorState: EditorState.createWithContent(contentState)
+      });
+    }
+  }
+
   onEditorStateChange = (editorState) => {
+    this.props.handleStateChange && this.props.handleStateChange(this.getContent(), 'content')
     this.setState({
       editorState,
     });
   };
 
   getContent = () => {
-    return convertToRaw(this.state.editorState.getCurrentContent()) ;
+    return draftToHtml(convertToRaw(this.state.editorState.getCurrentContent()))
   }
 
   render() {
@@ -30,10 +45,6 @@ class RichTextEditor extends Component {
           editorState={editorState}
           placeholder='Edit content below...'
           onEditorStateChange={this.onEditorStateChange}
-        />
-        <textarea
-          disabled
-          value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
         />
       </div>
     );

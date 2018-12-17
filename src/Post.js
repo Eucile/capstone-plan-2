@@ -46,6 +46,7 @@ function Post(props) {
         }
         .content-hidden {
           text-overflow: ellipsis;
+          max-height: 100px;
           overflow: hidden;
           white-space: nowrap;
         }
@@ -64,7 +65,7 @@ function Post(props) {
       <div className="blurb-box">
           <Link to={'/post/'+ props.id}><h1 className="titleStyles">{props.title}</h1></Link>
           <p className="authorStyles">posted by <strong>{props.author}</strong> — on {props.created_on}</p>
-          <p className="content-hidden p-text">{props.content &&  draftToHtml(props.content)}</p>
+          <p className="content-hidden p-text" dangerouslySetInnerHTML={{__html: props.content}} ></p>
           <Link to={'/post/'+ props.id}><span className="read-more">Read more...</span></Link>
       </div>
     </div>

@@ -7,10 +7,21 @@ import './assets/styles/UserDashboard.css';
 
 class MainBlog extends React.Component{
 
-  getPosts () {
+  getPosts = () => {
     let posts = [];
     this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
-      posts.push(snapshot.val());
+        posts.push(snapshot.val());
+    });
+    return posts.reverse();
+  }
+
+  getMyPosts = () => {
+    let posts = [];
+    let user_id = this.props.user && this.props.user.uid
+    this.props.posts.orderByChild("created_on").on("child_added", function(snapshot) {
+      if(snapshot.val().user_id == user_id) {
+        posts.push(snapshot.val());
+      }
     });
     return posts.reverse();
   }
@@ -24,7 +35,7 @@ class MainBlog extends React.Component{
             <div className="dash">
               <button className="default-button"><Link to="/new">new post</Link></button>
             </div>}
-            <PostList postList={this.getPosts()}/>
+            <PostList postList={this.props.myStuff ? this.getMyPosts() : this.getPosts()}/>
           </div>
         </div>
       </div>

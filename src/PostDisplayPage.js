@@ -46,7 +46,7 @@ class PostDisplayPage extends React.Component{
         <div className="post-content">
           <h1>{this.state.title}</h1>
           <h3>posted by {this.state.author} on {this.state.created_on}</h3>
-          <p>{this.state.content}</p>
+          <p dangerouslySetInnerHTML={{__html: this.state.content}}></p>
         </div>
         <div className="e-menu">
           <img src={glyph}/>

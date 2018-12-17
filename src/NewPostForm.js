@@ -26,7 +26,8 @@ class NewPostForm extends React.Component{
       content: this.content.getContent(),
       id: id,
       created_on: timeStamp,
-      updated_on: timeStamp
+      updated_on: timeStamp,
+      user_id: this.props.user.uid
     }
     this.props.database.ref('posts/' + id).set(post).then(
       this.setState({isPosted: true})
