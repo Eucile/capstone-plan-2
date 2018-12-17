@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import MainBlog from "./MainBlog";
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route,  withRouter } from 'react-router-dom';
 import NewPostForm from './NewPostForm';
 import LogInForm from './LogInForm';
 import UserDashboard from './UserDashboard';
