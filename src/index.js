@@ -6,7 +6,6 @@ import { HashRouter } from 'react-router-dom';
 import "typeface-roboto";
 import "typeface-exo";
 
-
 const render = (Component) => {
   ReactDOM.render(
     <AppContainer>

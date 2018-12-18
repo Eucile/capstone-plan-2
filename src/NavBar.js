@@ -5,7 +5,6 @@ import './assets/styles/NavBar.css';
 import ee from './assets/images/eucileglyph.png';
 
 function NavBar(){
-
   return (
     <div>
       <ul className="navBox">

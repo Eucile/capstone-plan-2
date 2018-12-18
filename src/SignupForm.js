@@ -6,15 +6,12 @@ class SignupForm extends React.Component{
 
   handleSignup = () => {
     this.props.firebase.auth().createUserWithEmailAndPassword(this.name.value, this.email.value, this.password.value).catch(function(error) {
-      // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
-      // ...
     });
   }
 
   render() {
-
     return(
       <div className="LogInStyles">
         <form onSubmit={this.handleSignup} className="user-sign-in">
