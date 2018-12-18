@@ -1,15 +1,12 @@
-# Capstone Planning
-
-#### by Krystal Foster
+![ƎE](readmeglyph.png)
+#### a blog engine by Krystal Foster
 #### Dec 7, 2018
 
-![ƎE](readmeglyph.png)
-
-## Name of Project: Eucile / ƎE 
+## Name of Project: Eucile / ƎE
 
 ### Project’s Purpose or Goal:
 
-A React CRUD app that allows a selection of authenticated contributors to update and curate content on a given topic. Will probably evolve into a personal design portfolio to house some of my personal art and inspirations after MVP is hit but I am focused on making a functioning mock-blog for now that I can specialize in the coming weeks. The project currently runs off a firebase database and includes user authentication, a rich text editing tool, the ability for authorized users to edit/delete/upload their own posts, and in the future I would like to add a component that will allow users to comment on and save posts as well. My end goal is to solidify my understanding of state maintenance and data flow in React. I think that building my own blog is a perfect opportunity for that.
+A React CRUD app/blog engine that allows a selection of authenticated contributors to update and curate content on a given topic. Will probably evolve into a personal design portfolio to house some of my personal art and inspirations after MVP is hit but I am focused on making a functioning mock-blog for now that I can specialize in the coming weeks. The project currently runs off a firebase database and includes user authentication, a rich text editing tool, the ability for authorized users to edit/delete/upload their own posts, and in the future I would like to add a component that will allow users to comment on and save posts as well. My end goal is to solidify my understanding of state maintenance and data flow in React. I think that building my own blog is a perfect opportunity for that.
 
 ### List the absolute minimum features the project requires to meet this purpose or goal:
 
