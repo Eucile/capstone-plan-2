@@ -3,7 +3,9 @@
 #### by Krystal Foster
 #### Dec 7, 2018
 
-## Name of Project: Blog Engine
+![ƎE](readmeglyph.png)
+
+## Name of Project: Eucile / ƎE 
 
 ### Project’s Purpose or Goal:
 
@@ -11,13 +13,13 @@ A React CRUD app that allows a selection of authenticated contributors to update
 
 ### List the absolute minimum features the project requires to meet this purpose or goal:
 
-* routing throughout, including log in page, blog entry form, home, etc. ✔️
-* Working firebase database that stores and pushes submitted entries to DOM ✔️
-* the ability for authorized users to add, edit and delete entries. ✔️
-* User authentication with the correct authorized views and control over their own posts. ✔️
-* user dashboard with convenient links to their past posts for review and editing purposes. ✔️
-* Master blog list limited to so many characters, with the full post visible on click. ✔️
-* Rich text editor feature that preserves whitespace and text formatting for bloggers. ✔️
+* routing throughout, including log in page, blog entry form, home, etc.
+* Working firebase database that stores and pushes submitted entries to DOM
+* the ability for authorized users to add, edit and delete entries.
+* User authentication with the correct authorized views and control over their own posts.
+* user dashboard with convenient links to their past posts for review and editing purposes.
+* Master blog list limited to so many characters, with the full post visible on click.
+* Rich text editor feature that preserves whitespace and text formatting for bloggers.
 * subtle page transitions and animations to the point of being almost subliminal but adding some sugar to the whole user flow thing
 
 ## NOTE: Clicking the "home" link routes you to the blog portion of this project which is currently informed by a firebase database, but the api key is needed to access it. Ultimately I will deploy it to firebase publicly, in the meantime, feel free to ask me for my config file and credentials or to make your own. (The firebaseConfig.js file should live inside the constants folder, which can be found in src)
@@ -26,6 +28,7 @@ A React CRUD app that allows a selection of authenticated contributors to update
 
 * React
 * JavaScript
+* CSS/HTML
 * Firebase database and auth
 * possibly draft.js or another framework to allow rich text editing
 
