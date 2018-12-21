@@ -9,6 +9,7 @@
 A React CRUD app/blog engine that allows a selection of authenticated contributors to update and curate content on a given topic. Will probably evolve into a personal design portfolio to house some of my personal art and inspirations after MVP is hit but I am focused on making a functioning mock-blog for now that I can specialize in the coming weeks. The project currently runs off a firebase database and includes user authentication, a rich text editing tool, the ability for authorized users to edit/delete/upload their own posts, and in the future I would like to add a component that allows users to comment on and favorite posts as well. My end goal is to make practical use of the skills I have learned and better familiarize myself with state maintenance and data flow in React. I think that building my own blog is a perfect opportunity for that.
 
 ![ƎE](userdash.png)
+![ƎE](login.png)
 
 ### List the absolute minimum features the project requires to meet this purpose or goal:
 
