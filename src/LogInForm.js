@@ -34,9 +34,11 @@ class LogInForm extends React.Component{
             id='password'
             placeholder='password:'
             ref={(input) => {this.password = input;}}/>
-          <button className='login-button' type='submit'>log in</button>
-          <p className="or">— OR —</p>
-          <button className='signup-button' type='submit'><Link to="/signup">sign up</Link></button>
+          <div className="button-box">
+            <button className='login-button' type='submit'>log in</button>
+            <p className="or">— OR —</p>
+            <button className='signup-button' type='submit'><Link to="/signup">sign up</Link></button>
+          </div>
         </form>
       </div>
     );
